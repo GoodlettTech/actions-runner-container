@@ -20,6 +20,7 @@ RUN apt-get update -y && apt-get upgrade -y && apt-get install -y --no-install-r
 	wget \
 	gnupg2 \
 	lsb-release \
+	unzip \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN apt-get update -y \
