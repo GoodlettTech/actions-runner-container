@@ -1,0 +1,11 @@
+services:
+  actions-runner:
+    build: .
+    image: actions-runner
+    env_file:
+      - .env
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    deploy:
+      mode: replicated
+      replicas: 5
